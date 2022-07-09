@@ -7,20 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CD6D9223EF85E2E82AF9FA8 /* libPods-pokeapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD8736FCFEEE133F69E3C4C /* libPods-pokeapp.a */; };
+		CFC597AE287A17070003D2B5 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC597AD287A17070003D2B5 /* Navigator.swift */; };
+		CFC597B0287A172B0003D2B5 /* AppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC597AF287A172B0003D2B5 /* AppNavigator.swift */; };
+		CFC597B2287A17530003D2B5 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC597B1287A17530003D2B5 /* Routes.swift */; };
+		CFC597B4287A17870003D2B5 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC597B3287A17870003D2B5 /* APIService.swift */; };
+		CFC597B6287A179D0003D2B5 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC597B5287A179D0003D2B5 /* TargetType.swift */; };
+		CFC597B8287A17B70003D2B5 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC597B7287A17B70003D2B5 /* BaseViewModel.swift */; };
+		CFC597BA287A17D00003D2B5 /* ViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC597B9287A17D00003D2B5 /* ViewModelState.swift */; };
+		CFC597BC287A17E20003D2B5 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC597BB287A17E20003D2B5 /* SearchService.swift */; };
+		CFC597BE287A17F50003D2B5 /* SearchResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC597BD287A17F50003D2B5 /* SearchResource.swift */; };
+		CFC597C0287A19180003D2B5 /* MainVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC597BF287A19180003D2B5 /* MainVCViewModel.swift */; };
+		CFC597C2287A19540003D2B5 /* PokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC597C1287A19540003D2B5 /* PokeModel.swift */; };
+		CFC597C6287A1F620003D2B5 /* PokeDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC597C5287A1F620003D2B5 /* PokeDetailsModel.swift */; };
+		CFC597C8287A219A0003D2B5 /* PokeListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC597C7287A219A0003D2B5 /* PokeListViewCell.swift */; };
 		CFE06B732879FE9900D824BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE06B722879FE9900D824BF /* AppDelegate.swift */; };
-		CFE06B752879FE9900D824BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE06B742879FE9900D824BF /* SceneDelegate.swift */; };
-		CFE06B772879FE9900D824BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE06B762879FE9900D824BF /* ViewController.swift */; };
-		CFE06B7A2879FE9900D824BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE06B782879FE9900D824BF /* Main.storyboard */; };
+		CFE06B772879FE9900D824BF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE06B762879FE9900D824BF /* MainViewController.swift */; };
 		CFE06B7C2879FE9B00D824BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE06B7B2879FE9B00D824BF /* Assets.xcassets */; };
 		CFE06B7F2879FE9B00D824BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE06B7D2879FE9B00D824BF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DD8736FCFEEE133F69E3C4C /* libPods-pokeapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pokeapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8977E907B368052810356347 /* Pods-pokeapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokeapp.release.xcconfig"; path = "Target Support Files/Pods-pokeapp/Pods-pokeapp.release.xcconfig"; sourceTree = "<group>"; };
+		B3F70464456ED9C168F3134D /* Pods-pokeapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokeapp.debug.xcconfig"; path = "Target Support Files/Pods-pokeapp/Pods-pokeapp.debug.xcconfig"; sourceTree = "<group>"; };
+		CFC597AD287A17070003D2B5 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		CFC597AF287A172B0003D2B5 /* AppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigator.swift; sourceTree = "<group>"; };
+		CFC597B1287A17530003D2B5 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		CFC597B3287A17870003D2B5 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		CFC597B5287A179D0003D2B5 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		CFC597B7287A17B70003D2B5 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		CFC597B9287A17D00003D2B5 /* ViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelState.swift; sourceTree = "<group>"; };
+		CFC597BB287A17E20003D2B5 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		CFC597BD287A17F50003D2B5 /* SearchResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResource.swift; sourceTree = "<group>"; };
+		CFC597BF287A19180003D2B5 /* MainVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCViewModel.swift; sourceTree = "<group>"; };
+		CFC597C1287A19540003D2B5 /* PokeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeModel.swift; sourceTree = "<group>"; };
+		CFC597C5287A1F620003D2B5 /* PokeDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDetailsModel.swift; sourceTree = "<group>"; };
+		CFC597C7287A219A0003D2B5 /* PokeListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeListViewCell.swift; sourceTree = "<group>"; };
 		CFE06B6F2879FE9900D824BF /* pokeapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokeapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE06B722879FE9900D824BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CFE06B742879FE9900D824BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CFE06B762879FE9900D824BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CFE06B792879FE9900D824BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFE06B762879FE9900D824BF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CFE06B7B2879FE9B00D824BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFE06B7E2879FE9B00D824BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFE06B802879FE9B00D824BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,17 +57,77 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CD6D9223EF85E2E82AF9FA8 /* libPods-pokeapp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60974E23D46C5F4B91428423 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DD8736FCFEEE133F69E3C4C /* libPods-pokeapp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFC597A7287A162C0003D2B5 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				CFC597B7287A17B70003D2B5 /* BaseViewModel.swift */,
+				CFC597B9287A17D00003D2B5 /* ViewModelState.swift */,
+				CFC597BB287A17E20003D2B5 /* SearchService.swift */,
+				CFC597BD287A17F50003D2B5 /* SearchResource.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		CFC597A9287A164C0003D2B5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CFC597B3287A17870003D2B5 /* APIService.swift */,
+				CFC597B5287A179D0003D2B5 /* TargetType.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CFC597AA287A16540003D2B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CFE06B722879FE9900D824BF /* AppDelegate.swift */,
+				CFE06B7B2879FE9B00D824BF /* Assets.xcassets */,
+				CFE06B7D2879FE9B00D824BF /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CFC597AB287A16660003D2B5 /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				CFE06B762879FE9900D824BF /* MainViewController.swift */,
+				CFC597BF287A19180003D2B5 /* MainVCViewModel.swift */,
+				CFC597C1287A19540003D2B5 /* PokeModel.swift */,
+				CFC597C5287A1F620003D2B5 /* PokeDetailsModel.swift */,
+				CFC597C7287A219A0003D2B5 /* PokeListViewCell.swift */,
+			);
+			path = MainVC;
+			sourceTree = "<group>";
+		};
+		CFC597AC287A16850003D2B5 /* DetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailsVC;
+			sourceTree = "<group>";
+		};
 		CFE06B662879FE9900D824BF = {
 			isa = PBXGroup;
 			children = (
 				CFE06B712879FE9900D824BF /* pokeapp */,
 				CFE06B702879FE9900D824BF /* Products */,
+				E21542713A6C15ECDE4CACEC /* Pods */,
+				60974E23D46C5F4B91428423 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +142,34 @@
 		CFE06B712879FE9900D824BF /* pokeapp */ = {
 			isa = PBXGroup;
 			children = (
-				CFE06B722879FE9900D824BF /* AppDelegate.swift */,
-				CFE06B742879FE9900D824BF /* SceneDelegate.swift */,
-				CFE06B762879FE9900D824BF /* ViewController.swift */,
-				CFE06B782879FE9900D824BF /* Main.storyboard */,
-				CFE06B7B2879FE9B00D824BF /* Assets.xcassets */,
-				CFE06B7D2879FE9B00D824BF /* LaunchScreen.storyboard */,
+				CFC597AC287A16850003D2B5 /* DetailsVC */,
+				CFC597AB287A16660003D2B5 /* MainVC */,
+				CFC597AA287A16540003D2B5 /* Resources */,
+				CFE06B86287A153A00D824BF /* Navigators */,
+				CFC597A9287A164C0003D2B5 /* Networking */,
+				CFC597A7287A162C0003D2B5 /* Others */,
 				CFE06B802879FE9B00D824BF /* Info.plist */,
 			);
 			path = pokeapp;
+			sourceTree = "<group>";
+		};
+		CFE06B86287A153A00D824BF /* Navigators */ = {
+			isa = PBXGroup;
+			children = (
+				CFC597AD287A17070003D2B5 /* Navigator.swift */,
+				CFC597AF287A172B0003D2B5 /* AppNavigator.swift */,
+				CFC597B1287A17530003D2B5 /* Routes.swift */,
+			);
+			path = Navigators;
+			sourceTree = "<group>";
+		};
+		E21542713A6C15ECDE4CACEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3F70464456ED9C168F3134D /* Pods-pokeapp.debug.xcconfig */,
+				8977E907B368052810356347 /* Pods-pokeapp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +179,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFE06B832879FE9B00D824BF /* Build configuration list for PBXNativeTarget "pokeapp" */;
 			buildPhases = (
+				0CA2E49C5B7BBF0BA00D09B5 /* [CP] Check Pods Manifest.lock */,
 				CFE06B6B2879FE9900D824BF /* Sources */,
 				CFE06B6C2879FE9900D824BF /* Frameworks */,
 				CFE06B6D2879FE9900D824BF /* Resources */,
@@ -127,34 +233,62 @@
 			files = (
 				CFE06B7F2879FE9B00D824BF /* LaunchScreen.storyboard in Resources */,
 				CFE06B7C2879FE9B00D824BF /* Assets.xcassets in Resources */,
-				CFE06B7A2879FE9900D824BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CA2E49C5B7BBF0BA00D09B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pokeapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFE06B6B2879FE9900D824BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFE06B772879FE9900D824BF /* ViewController.swift in Sources */,
+				CFE06B772879FE9900D824BF /* MainViewController.swift in Sources */,
+				CFC597B0287A172B0003D2B5 /* AppNavigator.swift in Sources */,
+				CFC597C0287A19180003D2B5 /* MainVCViewModel.swift in Sources */,
+				CFC597B2287A17530003D2B5 /* Routes.swift in Sources */,
+				CFC597BE287A17F50003D2B5 /* SearchResource.swift in Sources */,
 				CFE06B732879FE9900D824BF /* AppDelegate.swift in Sources */,
-				CFE06B752879FE9900D824BF /* SceneDelegate.swift in Sources */,
+				CFC597C6287A1F620003D2B5 /* PokeDetailsModel.swift in Sources */,
+				CFC597B4287A17870003D2B5 /* APIService.swift in Sources */,
+				CFC597B8287A17B70003D2B5 /* BaseViewModel.swift in Sources */,
+				CFC597C2287A19540003D2B5 /* PokeModel.swift in Sources */,
+				CFC597AE287A17070003D2B5 /* Navigator.swift in Sources */,
+				CFC597BC287A17E20003D2B5 /* SearchService.swift in Sources */,
+				CFC597B6287A179D0003D2B5 /* TargetType.swift in Sources */,
+				CFC597BA287A17D00003D2B5 /* ViewModelState.swift in Sources */,
+				CFC597C8287A219A0003D2B5 /* PokeListViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CFE06B782879FE9900D824BF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CFE06B792879FE9900D824BF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CFE06B7D2879FE9B00D824BF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +418,7 @@
 		};
 		CFE06B842879FE9B00D824BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3F70464456ED9C168F3134D /* Pods-pokeapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,7 +429,8 @@
 				INFOPLIST_FILE = pokeapp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,6 +448,7 @@
 		};
 		CFE06B852879FE9B00D824BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8977E907B368052810356347 /* Pods-pokeapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,7 +459,8 @@
 				INFOPLIST_FILE = pokeapp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

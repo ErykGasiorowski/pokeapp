@@ -7,11 +7,12 @@
 
 import Foundation
 
-struct Welcome: Codable {
+struct PokeDetails: Codable {
     let id: Int
     let name: String?
     let order: Int?
     let types: [TypeElement]
+    let sprites: Sprites
 }
     
 struct Species: Codable {
@@ -22,4 +23,12 @@ struct Species: Codable {
 struct TypeElement: Codable {
         let slot: Int
         let type: Species
+}
+
+struct Sprites: Codable {
+    let frontDefault: String
+
+    enum CodingKeys: String, CodingKey {
+        case frontDefault = "front_default"
+    }
 }

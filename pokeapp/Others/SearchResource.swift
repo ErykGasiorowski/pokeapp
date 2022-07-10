@@ -10,17 +10,21 @@ import Moya
 
 enum SearchResource: TargetType {
     
-    case getSearchResults(String)
+    case getSearchResults
+    case getPokemonInfo(String)
+    
     var path: String {
         switch self {
-        case .getSearchResults(let query):
-            return ""
+        case .getSearchResults:
+            return "pokemon"
+        case .getPokemonInfo(let pokeName):
+            return "pokemon/\(pokeName)"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .getSearchResults:
+        case .getSearchResults, .getPokemonInfo:
             return .get
         }
     }
@@ -31,8 +35,12 @@ enum SearchResource: TargetType {
     
     var task: Task {
         switch self {
-        case .getSearchResults(let query):
-            return .requestParameters(parameters: ["pokemon":"?limit=100000&offset=0"], encoding: URLEncoding.default)
+        case .getSearchResults:
+            return .requestParameters(parameters: ["?":"limit=100000&offset=0"], encoding: URLEncoding.default)
+            
+        case .getPokemonInfo(let pokeName):
+            return .requestParameters(parameters: [:], encoding: URLEncoding.default)
         }
+        
     }
 }

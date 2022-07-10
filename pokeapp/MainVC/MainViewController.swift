@@ -47,6 +47,9 @@ class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBar
         navigationItem.searchController = searchController
         navigationItem.largeTitleDisplayMode = .always
         
+        setupBehavior()
+        viewModel.fetchData()
+        viewModel.getDataForTableViewCell()
         setupLayout()
     }
     
@@ -56,7 +59,14 @@ class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBar
             return
         }
         //viewModel.query = searchBar.text!
-        // reload data
+    }
+    
+    func setupBehavior() {
+        
+        viewModel.reloadData.bind { [weak self] in
+            guard let self = self else { return }
+            self.searchResultsTableView.reloadData()
+        }
     }
     
     func updateSearchResults(for searchController: UISearchController) {
@@ -72,7 +82,7 @@ class MainViewController: UIViewController, UISearchResultsUpdating, UISearchBar
         searchResultsTableView.delegate = viewModel
         searchResultsTableView.dataSource = viewModel
         searchResultsTableView.backgroundColor = .white
-        searchResultsTableView.rowHeight = 90
+        searchResultsTableView.rowHeight = 75
         
         var frame = CGRect.zero
         

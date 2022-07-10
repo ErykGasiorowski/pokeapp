@@ -13,12 +13,44 @@ class MainVCViewModel: BaseViewModel {
     
     private let service: SearchService
     
-    let searchForPokemons = BehaviorRelay<[PokemonsArray]>(value: [])
+    let searchForPokemons = BehaviorRelay<[Result]>(value: [])
+    let onSuccess = BehaviorRelay<[PokeDetails]>(value: [])
+    let onError = PublishSubject<String>()
+    var reloadData = PublishSubject<()>()
     
-    var name = ""
+    var query = ""
+    var pokeNames = [Result]()
+    var pokeResults = [PokeDetails]()
     
     init(service: SearchService) {
         self.service = service
+    }
+    
+    func fetchData() {
+        service.getSearchResults()
+            .subscribe(onNext: { result in
+                self.searchForPokemons.accept(result.results ?? [])
+                self.pokeNames.append(contentsOf: result.results)
+                self.reloadData.onNext(())
+                 print(self.pokeNames)
+            }, onError: { error in
+                print(error)
+            }).disposed(by: disposeBag)
+    }
+    
+    func fetchDetails() {
+        
+    }
+    
+    func getDataForTableViewCell() {
+        service.getPokemonInfo(pokeName: pokeNames.first?.name ?? "").subscribe(onNext: { result in
+            self.onSuccess.accept(result)
+            self.pokeResults.append(contentsOf: result)
+            print(self.pokeResults)
+            self.reloadData.onNext(())
+        }, onError: { [weak self] error in
+            self?.onError.onNext(error.localizedDescription)
+        }).disposed(by: disposeBag)
     }
     
     func navigateToDetails(_ name: String?){
@@ -30,7 +62,7 @@ class MainVCViewModel: BaseViewModel {
 
 extension MainVCViewModel: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return searchForPokemons.value.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -39,6 +71,19 @@ extension MainVCViewModel: UITableViewDataSource, UITableViewDelegate {
         else {
             return UITableViewCell()
         }
+        
+        if pokeResults.count <= indexPath.row {
+            return cell
+        }
+        
+        //let item = pokeResults[indexPath.row]
+        
+//        cell.button.rx.tap.asObservable().bind { [weak self] _ in
+//            self?.navigateToDetails(name)
+//        }.disposed(by: cell.disposeBag)
+
+        //cell.configure(model: item)
+        
         return cell
     }
 }
